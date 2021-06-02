@@ -14,6 +14,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'unicorn' # アプリケーションサーバのunicorn
 gem 'mini_racer', platforms: :ruby # デプロイ時に必要
 
+gem 'ed25519', '>= 1.2, < 2.0' # 追記
+gem 'bcrypt_pbkdf', '>= 1.0, < 2.0' # 追記
+
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
