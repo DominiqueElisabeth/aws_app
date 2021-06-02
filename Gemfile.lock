@@ -224,7 +224,7 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
-  x86_64-darwin-20
+  ruby
 
 DEPENDENCIES
   bcrypt_pbkdf (>= 1.0, < 2.0)
@@ -260,4 +260,4 @@ RUBY VERSION
    ruby 2.6.5p114
 
 BUNDLED WITH
-   2.2.16
+   2.1.4
