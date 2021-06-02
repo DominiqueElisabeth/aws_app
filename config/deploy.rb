@@ -6,7 +6,7 @@ set :application, 'aws_app'
 # （xxxxxxxx：ユーザ名、yyyyyyyy：アプリケーション名）
 set :repo_url, 'https://github.com/Ryosuke-Fukuyama/AWS_app.git'
 # deployするブランチ。デフォルトでmainを使用している場合、masterをmainに変更してください。
-set :branch, ENV['BRANCH'] || 'master'
+set :branch, ENV['BRANCH'] || 'main'
 # deploy先のディレクトリ。
 set :deploy_to, '/var/www/aws_app'
 # シンボリックリンクをはるフォルダ・ファイル
