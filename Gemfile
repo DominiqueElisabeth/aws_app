@@ -11,17 +11,17 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-gem 'unicorn' # アプリケーションサーバのunicorn
-gem 'mini_racer', platforms: :ruby # デプロイ時に必要
+gem 'unicorn' # unicorn
+gem 'mini_racer', platforms: :ruby
 
-gem 'ed25519', '>= 1.2', '< 2.0' # 追記
-gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0' # 追記
+gem 'ed25519', '>= 1.2', '< 2.0'
+gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  # 以下capistranoのツール一式
+  # capistrano
   gem 'capistrano', '3.6.0'
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
@@ -34,7 +34,7 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'dotenv-rails' # 開発環境で環境変数を操作するのに必要
+  gem 'dotenv-rails' 
 end
 
 group :test do

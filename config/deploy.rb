@@ -1,26 +1,23 @@
 # config valid only for current version of Capistrano
 lock '3.6.0'
-# デプロイするアプリケーション名
+
+#FIXME add your app name here
 set :application, 'aws_app'
-# cloneするgitのレポジトリ
-# （xxxxxxxx：ユーザ名、yyyyyyyy：アプリケーション名）
-set :repo_url, 'https://github.com/Ryosuke-Fukuyama/AWS_app.git'
-# deployするブランチ。デフォルトでmainを使用している場合、masterをmainに変更してください。
+#FIXME replace 'git@github.com:YOUR-GIT-REPO-HERE' with your git clone url
+set :repo_url, 'https://github.com/DominiqueElisabeth/aws_app'
+#FIXME add location on the server here
+set :deploy_to, '/home/deploy/aws_app'
 set :branch, ENV['BRANCH'] || 'main'
-# deploy先のディレクトリ。
-set :deploy_to, '/var/www/aws_app'
-# シンボリックリンクをはるフォルダ・ファイル
+
 set :linked_files, %w{.env config/secrets.yml}
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets public/uploads}
-# 保持するバージョンの個数(※後述)
+
 set :keep_releases, 5
-# Rubyのバージョン
-set :rbenv_ruby, '2.6.5'
+# Ruby
+set :rbenv_ruby, '2.6.7'
 set :rbenv_type, :system
-# 出力するログのレベル。エラーログを詳細に見たい場合は :debug に設定する。
-# 本番環境用のものであれば、 :info程度が普通。
-# ただし挙動をしっかり確認したいのであれば :debug に設定する。
-set :log_level, :info
+
+sset :log_level, :info
 namespace :deploy do
   desc 'Restart application'
   task :restart do
