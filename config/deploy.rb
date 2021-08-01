@@ -14,7 +14,7 @@ set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets public/uploads}
 
 set :keep_releases, 5
 # Ruby
-set :rbenv_ruby, '2.6.7'
+set :rbenv_ruby, '2.6.5'
 set :rbenv_type, :system
 
 sset :log_level, :info
