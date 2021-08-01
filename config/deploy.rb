@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock '3.16.0'
+lock '3.6.0'
 
 #FIXME add your app name here
 set :application, 'aws_app'
