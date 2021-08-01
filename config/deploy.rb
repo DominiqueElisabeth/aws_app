@@ -6,7 +6,7 @@ set :application, 'aws_app'
 #FIXME replace 'git@github.com:YOUR-GIT-REPO-HERE' with your git clone url
 set :repo_url, 'https://github.com/DominiqueElisabeth/aws_app'
 #FIXME add location on the server here
-set :deploy_to, '/home/deploy/aws_app'
+set :deploy_to, '/var/www/aws_app'
 set :branch, ENV['BRANCH'] || 'main'
 
 set :linked_files, %w{.env config/secrets.yml}
